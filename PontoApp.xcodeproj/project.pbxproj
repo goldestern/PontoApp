@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00000000000000000000001 /* PontoIPhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000050 /* PontoIPhoneApp.swift */; };
+		B00000000000000000000002 /* PhoneDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000051 /* PhoneDashboardView.swift */; };
+		B00000000000000000000003 /* PhoneHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000052 /* PhoneHistoryView.swift */; };
+		B00000000000000000000004 /* DeviceSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000060 /* DeviceSource.swift */; };
+		B00000000000000000000005 /* PunchKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000061 /* PunchKind.swift */; };
+		B00000000000000000000006 /* PunchRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000062 /* PunchRecord.swift */; };
+		B00000000000000000000007 /* ShiftStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000063 /* ShiftStatus.swift */; };
+		B00000000000000000000008 /* WorkdaySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000064 /* WorkdaySummary.swift */; };
+		B00000000000000000000009 /* PunchStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000065 /* PunchStorage.swift */; };
+		B0000000000000000000000A /* TimeClockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000066 /* TimeClockStore.swift */; };
+		B0000000000000000000000B /* TimeClockSyncing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000067 /* TimeClockSyncing.swift */; };
+		B0000000000000000000000C /* WatchConnectivitySync.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000068 /* WatchConnectivitySync.swift */; };
+		B0000000000000000000000D /* PontoFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000069 /* PontoFormatters.swift */; };
+		B0000000000000000000000E /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000006A /* PreviewData.swift */; };
+		B0000000000000000000000F /* PontoColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000006B /* PontoColors.swift */; };
+		B00000000000000000000010 /* PunchActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000006C /* PunchActionButton.swift */; };
+		B00000000000000000000011 /* StatusOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000006D /* StatusOverviewView.swift */; };
+		B00000000000000000000012 /* DailySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000006E /* DailySummaryView.swift */; };
+		B00000000000000000000013 /* PunchTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000006F /* PunchTimelineView.swift */; };
+		B00000000000000000000014 /* SyncFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000070 /* SyncFooterView.swift */; };
+		B00000000000000000000015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000071 /* Assets.xcassets */; };
+		B00000000000000000000016 /* Ponto Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A00000000000000000000041 /* Ponto Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C00000000000000000000001 /* PontoWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000054 /* PontoWatchApp.swift */; };
+		C00000000000000000000002 /* WatchDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000055 /* WatchDashboardView.swift */; };
+		C00000000000000000000004 /* DeviceSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000060 /* DeviceSource.swift */; };
+		C00000000000000000000005 /* PunchKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000061 /* PunchKind.swift */; };
+		C00000000000000000000006 /* PunchRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000062 /* PunchRecord.swift */; };
+		C00000000000000000000007 /* ShiftStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000063 /* ShiftStatus.swift */; };
+		C00000000000000000000008 /* WorkdaySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000064 /* WorkdaySummary.swift */; };
+		C00000000000000000000009 /* PunchStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000065 /* PunchStorage.swift */; };
+		C0000000000000000000000A /* TimeClockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000066 /* TimeClockStore.swift */; };
+		C0000000000000000000000B /* TimeClockSyncing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000067 /* TimeClockSyncing.swift */; };
+		C0000000000000000000000C /* WatchConnectivitySync.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000068 /* WatchConnectivitySync.swift */; };
+		C0000000000000000000000D /* PontoFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000069 /* PontoFormatters.swift */; };
+		C0000000000000000000000E /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000006A /* PreviewData.swift */; };
+		C0000000000000000000000F /* PontoColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000006B /* PontoColors.swift */; };
+		C00000000000000000000010 /* PunchActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000006C /* PunchActionButton.swift */; };
+		C00000000000000000000011 /* StatusOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000006D /* StatusOverviewView.swift */; };
+		C00000000000000000000012 /* DailySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000006E /* DailySummaryView.swift */; };
+		C00000000000000000000013 /* PunchTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000006F /* PunchTimelineView.swift */; };
+		C00000000000000000000014 /* SyncFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000070 /* SyncFooterView.swift */; };
+		C00000000000000000000015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000071 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0000000000000000000000E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000002 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000011;
+			remoteInfo = "Ponto Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A00000000000000000000033 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B00000000000000000000016 /* Ponto Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000040 /* Ponto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ponto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000041 /* Ponto Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ponto Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000050 /* PontoIPhoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontoIPhoneApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000051 /* PhoneDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDashboardView.swift; sourceTree = "<group>"; };
+		A00000000000000000000052 /* PhoneHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneHistoryView.swift; sourceTree = "<group>"; };
+		A00000000000000000000053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00000000000000000000054 /* PontoWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontoWatchApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000055 /* WatchDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDashboardView.swift; sourceTree = "<group>"; };
+		A00000000000000000000056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00000000000000000000060 /* DeviceSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSource.swift; sourceTree = "<group>"; };
+		A00000000000000000000061 /* PunchKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchKind.swift; sourceTree = "<group>"; };
+		A00000000000000000000062 /* PunchRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchRecord.swift; sourceTree = "<group>"; };
+		A00000000000000000000063 /* ShiftStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftStatus.swift; sourceTree = "<group>"; };
+		A00000000000000000000064 /* WorkdaySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdaySummary.swift; sourceTree = "<group>"; };
+		A00000000000000000000065 /* PunchStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchStorage.swift; sourceTree = "<group>"; };
+		A00000000000000000000066 /* TimeClockStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeClockStore.swift; sourceTree = "<group>"; };
+		A00000000000000000000067 /* TimeClockSyncing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeClockSyncing.swift; sourceTree = "<group>"; };
+		A00000000000000000000068 /* WatchConnectivitySync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivitySync.swift; sourceTree = "<group>"; };
+		A00000000000000000000069 /* PontoFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontoFormatters.swift; sourceTree = "<group>"; };
+		A0000000000000000000006A /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		A0000000000000000000006B /* PontoColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontoColors.swift; sourceTree = "<group>"; };
+		A0000000000000000000006C /* PunchActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchActionButton.swift; sourceTree = "<group>"; };
+		A0000000000000000000006D /* StatusOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusOverviewView.swift; sourceTree = "<group>"; };
+		A0000000000000000000006E /* DailySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySummaryView.swift; sourceTree = "<group>"; };
+		A0000000000000000000006F /* PunchTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchTimelineView.swift; sourceTree = "<group>"; };
+		A00000000000000000000070 /* SyncFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncFooterView.swift; sourceTree = "<group>"; };
+		A00000000000000000000071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000004 /* iPhone */,
+				A00000000000000000000005 /* Watch */,
+				A00000000000000000000006 /* Shared */,
+				A0000000000000000000000C /* Resources */,
+				A00000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000040 /* Ponto.app */,
+				A00000000000000000000041 /* Ponto Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000004 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000050 /* PontoIPhoneApp.swift */,
+				A00000000000000000000051 /* PhoneDashboardView.swift */,
+				A00000000000000000000052 /* PhoneHistoryView.swift */,
+				A00000000000000000000053 /* Info.plist */,
+			);
+			path = PontoApp/iPhone;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000005 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000054 /* PontoWatchApp.swift */,
+				A00000000000000000000055 /* WatchDashboardView.swift */,
+				A00000000000000000000056 /* Info.plist */,
+			);
+			path = PontoApp/Watch;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000006 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000007 /* Models */,
+				A00000000000000000000008 /* Stores */,
+				A00000000000000000000009 /* Connectivity */,
+				A0000000000000000000000A /* Support */,
+				A0000000000000000000000B /* Views */,
+			);
+			path = PontoApp/Shared;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000060 /* DeviceSource.swift */,
+				A00000000000000000000061 /* PunchKind.swift */,
+				A00000000000000000000062 /* PunchRecord.swift */,
+				A00000000000000000000063 /* ShiftStatus.swift */,
+				A00000000000000000000064 /* WorkdaySummary.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000008 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000065 /* PunchStorage.swift */,
+				A00000000000000000000066 /* TimeClockStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000009 /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000067 /* TimeClockSyncing.swift */,
+				A00000000000000000000068 /* WatchConnectivitySync.swift */,
+			);
+			path = Connectivity;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000000A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000069 /* PontoFormatters.swift */,
+				A0000000000000000000006A /* PreviewData.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000000B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0000000000000000000006B /* PontoColors.swift */,
+				A0000000000000000000006C /* PunchActionButton.swift */,
+				A0000000000000000000006D /* StatusOverviewView.swift */,
+				A0000000000000000000006E /* DailySummaryView.swift */,
+				A0000000000000000000006F /* PunchTimelineView.swift */,
+				A00000000000000000000070 /* SyncFooterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000000C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000071 /* Assets.xcassets */,
+			);
+			path = PontoApp/Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000010 /* Ponto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000023 /* Build configuration list for PBXNativeTarget "Ponto" */;
+			buildPhases = (
+				A00000000000000000000030 /* Sources */,
+				A00000000000000000000032 /* Frameworks */,
+				A00000000000000000000031 /* Resources */,
+				A00000000000000000000033 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0000000000000000000000D /* PBXTargetDependency */,
+			);
+			name = Ponto;
+			productName = Ponto;
+			productReference = A00000000000000000000040 /* Ponto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A00000000000000000000011 /* Ponto Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000026 /* Build configuration list for PBXNativeTarget "Ponto Watch App" */;
+			buildPhases = (
+				A00000000000000000000034 /* Sources */,
+				A00000000000000000000036 /* Frameworks */,
+				A00000000000000000000035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ponto Watch App";
+			productName = "Ponto Watch App";
+			productReference = A00000000000000000000041 /* Ponto Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A00000000000000000000010 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A00000000000000000000011 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000020 /* Build configuration list for PBXProject "Ponto" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000000000000000000001;
+			productRefGroup = A00000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000010 /* Ponto */,
+				A00000000000000000000011 /* Ponto Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000031 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000015 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00000000000000000000015 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000030 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000001 /* PontoIPhoneApp.swift in Sources */,
+				B00000000000000000000002 /* PhoneDashboardView.swift in Sources */,
+				B00000000000000000000003 /* PhoneHistoryView.swift in Sources */,
+				B00000000000000000000004 /* DeviceSource.swift in Sources */,
+				B00000000000000000000005 /* PunchKind.swift in Sources */,
+				B00000000000000000000006 /* PunchRecord.swift in Sources */,
+				B00000000000000000000007 /* ShiftStatus.swift in Sources */,
+				B00000000000000000000008 /* WorkdaySummary.swift in Sources */,
+				B00000000000000000000009 /* PunchStorage.swift in Sources */,
+				B0000000000000000000000A /* TimeClockStore.swift in Sources */,
+				B0000000000000000000000B /* TimeClockSyncing.swift in Sources */,
+				B0000000000000000000000C /* WatchConnectivitySync.swift in Sources */,
+				B0000000000000000000000D /* PontoFormatters.swift in Sources */,
+				B0000000000000000000000E /* PreviewData.swift in Sources */,
+				B0000000000000000000000F /* PontoColors.swift in Sources */,
+				B00000000000000000000010 /* PunchActionButton.swift in Sources */,
+				B00000000000000000000011 /* StatusOverviewView.swift in Sources */,
+				B00000000000000000000012 /* DailySummaryView.swift in Sources */,
+				B00000000000000000000013 /* PunchTimelineView.swift in Sources */,
+				B00000000000000000000014 /* SyncFooterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00000000000000000000001 /* PontoWatchApp.swift in Sources */,
+				C00000000000000000000002 /* WatchDashboardView.swift in Sources */,
+				C00000000000000000000004 /* DeviceSource.swift in Sources */,
+				C00000000000000000000005 /* PunchKind.swift in Sources */,
+				C00000000000000000000006 /* PunchRecord.swift in Sources */,
+				C00000000000000000000007 /* ShiftStatus.swift in Sources */,
+				C00000000000000000000008 /* WorkdaySummary.swift in Sources */,
+				C00000000000000000000009 /* PunchStorage.swift in Sources */,
+				C0000000000000000000000A /* TimeClockStore.swift in Sources */,
+				C0000000000000000000000B /* TimeClockSyncing.swift in Sources */,
+				C0000000000000000000000C /* WatchConnectivitySync.swift in Sources */,
+				C0000000000000000000000D /* PontoFormatters.swift in Sources */,
+				C0000000000000000000000E /* PreviewData.swift in Sources */,
+				C0000000000000000000000F /* PontoColors.swift in Sources */,
+				C00000000000000000000010 /* PunchActionButton.swift in Sources */,
+				C00000000000000000000011 /* StatusOverviewView.swift in Sources */,
+				C00000000000000000000012 /* DailySummaryView.swift in Sources */,
+				C00000000000000000000013 /* PunchTimelineView.swift in Sources */,
+				C00000000000000000000014 /* SyncFooterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0000000000000000000000D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00000000000000000000011 /* Ponto Watch App */;
+			targetProxy = A0000000000000000000000E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A00000000000000000000022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A00000000000000000000024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PontoApp/iPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ponto;
+				PRODUCT_NAME = Ponto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A00000000000000000000025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PontoApp/iPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ponto;
+				PRODUCT_NAME = Ponto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A00000000000000000000027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PontoApp/Watch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ponto.watchapp;
+				PRODUCT_NAME = "Ponto Watch App";
+				SDKROOT = watchos;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				WK_COMPANION_APP_BUNDLE_IDENTIFIER = com.example.ponto;
+			};
+			name = Debug;
+		};
+		A00000000000000000000028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PontoApp/Watch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ponto.watchapp;
+				PRODUCT_NAME = "Ponto Watch App";
+				SDKROOT = watchos;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				WK_COMPANION_APP_BUNDLE_IDENTIFIER = com.example.ponto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000020 /* Build configuration list for PBXProject "Ponto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000021 /* Debug */,
+				A00000000000000000000022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000023 /* Build configuration list for PBXNativeTarget "Ponto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000024 /* Debug */,
+				A00000000000000000000025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000026 /* Build configuration list for PBXNativeTarget "Ponto Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000027 /* Debug */,
+				A00000000000000000000028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000002 /* Project object */;
+}
