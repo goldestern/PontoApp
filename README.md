@@ -1,43 +1,45 @@
 # PontoApp
 
-PontoApp e um aplicativo SwiftUI para registrar ponto no iPhone e no Apple Watch. Ele permite marcar entrada, inicio de pausa, volta da pausa e saida, mantendo um historico local e sincronizando registros entre os dispositivos.
+PontoApp is a SwiftUI time clock app for iPhone and Apple Watch. It lets users record clock-in, break start, break end, and clock-out events, keeping a local history and synchronizing records between devices.
 
-## Funcionalidades no iPhone
+[Portuguese version](README_PT-BR.md)
 
-- Dashboard principal com o estado atual do expediente: fora do expediente, trabalhando, em pausa ou expediente encerrado.
-- Botoes contextuais para registrar apenas as acoes validas no momento, como entrada, pausa, retorno ou saida.
-- Resumo do dia com total trabalhado, tempo em pausa, primeira entrada e ultima saida.
-- Historico do dia com horario, tipo de batida e origem do registro.
-- Tela de historico completa, agrupada por dia.
-- Opcoes para apagar os registros do dia ou todo o historico local.
+## iPhone Features
 
-## Funcionalidades no Apple Watch
+- Main dashboard with the current work status: off duty, working, on break, or shift finished.
+- Contextual buttons that only show the valid actions for the current status, such as clock in, start break, return from break, or clock out.
+- Daily summary with total worked time, break time, first clock-in, and last clock-out.
+- Daily history with time, punch type, and the device where each record was created.
+- Full history screen grouped by day.
+- Options to delete today's records or the entire local history.
 
-- Interface compacta para registrar ponto rapidamente no pulso.
-- Exibicao do estado atual do expediente.
-- Botoes contextuais para entrada, pausa, retorno e saida.
-- Resumo rapido das horas trabalhadas no dia.
-- Lista curta com as batidas mais recentes do dia.
+## Apple Watch Features
 
-## Sincronizacao
+- Compact interface for quickly recording time from the wrist.
+- Current work status display.
+- Contextual buttons for clock in, break start, break end, and clock out.
+- Quick summary of the hours worked during the day.
+- Short list with the most recent records for the day.
 
-O app usa `WatchConnectivity` para sincronizar os registros entre iPhone e Apple Watch. Quando uma batida e feita em um dispositivo, o historico e enviado para o outro quando houver conexao disponivel.
+## Synchronization
 
-As exclusoes tambem sao sincronizadas por meio de marcadores internos, evitando que registros apagados voltem a aparecer depois de uma sincronizacao tardia.
+The app uses `WatchConnectivity` to synchronize records between iPhone and Apple Watch. When a punch is recorded on one device, the history is sent to the other device whenever a connection is available.
 
-## Armazenamento
+Deleted records are also synchronized through internal markers, preventing old records from reappearing after a delayed sync.
 
-Os dados sao salvos localmente usando `UserDefaults`, codificados em JSON. O app nao depende de servidor externo para funcionar.
+## Storage
 
-## Requisitos
+Data is stored locally with `UserDefaults`, encoded as JSON. The app does not require an external server to work.
 
-- iOS 17 ou superior.
-- watchOS 10 ou superior.
-- Xcode em um macOS para compilar e instalar.
+## Requirements
 
-## Como abrir no Xcode
+- iOS 17 or later.
+- watchOS 10 or later.
+- Xcode on macOS to build and install the app.
 
-1. Abra `PontoApp.xcodeproj`.
-2. Selecione o target `Ponto`.
-3. Configure seu time em `Signing & Capabilities`.
-4. Rode no simulador de iPhone ou em um iPhone pareado com Apple Watch.
+## Opening In Xcode
+
+1. Open `PontoApp.xcodeproj`.
+2. Select the `Ponto` target.
+3. Configure your development team in `Signing & Capabilities`.
+4. Run the app in an iPhone simulator or on an iPhone paired with an Apple Watch.
